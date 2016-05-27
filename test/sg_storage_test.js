@@ -20,8 +20,11 @@ describe('sg-storage', () => {
   it('Sg storage', () => co(function * () {
     let storage = new SgStorage(`${__dirname}/../tmp`)
     yield storage.set('item01', { foo: 'bar' })
-    let data = yield storage.get('item01')
-    assert.deepEqual(data, { foo: 'bar' })
+    let data01 = yield storage.get('item01')
+    assert.deepEqual(data01, { foo: 'bar' })
+    yield storage.del('item01')
+    let data02 = yield storage.get('item01')
+    assert.equal(data02, undefined)
   }))
 })
 
