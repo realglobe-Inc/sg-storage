@@ -1,10 +1,13 @@
 'use strict'
 
 const sgStorage = require('sg-storage')
+const co = require('co')
 
 let storage = sgStorage('var/lib/simple-storage')
 
-storage.setItem('foo', 'bar')
+co(function * () {
+  yield storage.setItem('foo', 'bar')
 
-let item = storage.getItem('foo')
-console.log(item)
+  let item = yield storage.getItem('foo')
+  console.log(item)
+})
