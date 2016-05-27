@@ -1,13 +1,16 @@
 {
   "name": "sg-storage",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Simple storage for SUGOS",
   "main": "lib",
   "scripts": {
     "test": "./ci/test.js"
   },
   "repository": "realglobe-Inc/sg-storage",
-  "keywords": [],
+  "keywords": [
+    "SUGOS",
+    "Storage"
+  ],
   "author": {
     "name": "Taka Okunishi",
     "email": "okunishitaka.com@gmail.com",
