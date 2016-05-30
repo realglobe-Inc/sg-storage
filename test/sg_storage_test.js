@@ -18,13 +18,21 @@ describe('sg-storage', () => {
   }))
 
   it('Sg storage', () => co(function * () {
-    let storage = new SgStorage(`${__dirname}/../tmp`)
+    let storage = new SgStorage(`${__dirname}/../tmp/testing-storage-01`)
     yield storage.set('item01', { foo: 'bar' })
     let data01 = yield storage.get('item01')
     assert.deepEqual(data01, { foo: 'bar' })
     yield storage.del('item01')
     let data02 = yield storage.get('item01')
     assert.equal(data02, undefined)
+  }))
+
+  it('Create sub storage', () => co(function * () {
+    let storage = new SgStorage(`${__dirname}/../tmp/testing-storage-02`)
+    let subStorage = storage.sub('sub01')
+    yield subStorage.set('foo', { bar: 'baz' })
+    let foo = yield subStorage.get('foo')
+    assert.deepEqual(foo, { bar: 'baz' })
   }))
 })
 
