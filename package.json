@@ -1,6 +1,6 @@
 {
   "name": "sg-storage",
-  "version": "1.1.2",
+  "version": "2.0.0",
   "description": "Simple storage for SUGOS",
   "main": "lib",
   "scripts": {
@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/realglobe-Inc/sg-storage#readme",
   "dependencies": {
+    "apemanredis": "^1.0.3",
     "co": "^4.6.0",
     "mkdirp": "^0.5.1",
     "stringcase": "^2.0.1"

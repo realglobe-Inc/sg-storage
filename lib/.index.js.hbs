@@ -5,14 +5,12 @@
 
 'use strict'
 
-const create = require('./create')
-const SgStorage = require('./sg_storage')
+const sgStorage = require('./sg_storage')
 
-let lib = create.bind(this)
+let lib = sgStorage.bind(this)
 
-Object.assign(lib, {
-  create,
-  SgStorage
+Object.assign(lib, sgStorage, {
+
 })
 
 module.exports = lib
