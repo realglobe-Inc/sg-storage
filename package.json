@@ -22,10 +22,8 @@
   },
   "homepage": "https://github.com/realglobe-Inc/sg-storage#readme",
   "dependencies": {
-    "apemanredis": "^1.0.3",
-    "co": "^4.6.0",
-    "mkdirp": "^0.5.1",
-    "stringcase": "^2.0.1"
+    "apemanredis": "^1.0.5",
+    "co": "^4.6.0"
   },
   "devDependencies": {
     "ape-covering": "^3.0.3",
