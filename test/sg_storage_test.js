@@ -19,10 +19,9 @@ describe('sg-storage', () => {
 
   it('Sg storage', () => co(function * () {
     let storage = sgStorage(`${__dirname}/../tmp/testing-storage-01`)
-    yield storage.hset('myItem01', { foo: 'bar' })
-    let data01 = yield storage.hgetall('myItem01')
+    yield storage.hset('myValue01', { foo: 'bar' })
+    let data01 = yield storage.hgetall('myValue01')
     assert.deepEqual(data01, { foo: 'bar' })
-
   }))
 })
 
