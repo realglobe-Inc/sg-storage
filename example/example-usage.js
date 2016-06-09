@@ -13,11 +13,11 @@ co(function * () {
   // Get hash all
   let item = yield storage.hgetall('foo')
   console.log(item) // -> {bar: 'baz'}
-})
+}).catch((err) => console.error(err))
 
 // Using redis server
 co(function * () {
-  // See https://github.com/NodeRedis/node_redis#clientendflush for redis options
+  // See https://github.com/NodeRedis/node_redis#readme for redis options
   let storage = sgStorage.redis({
     host: '127.0.0.1',
     port: '6379',
@@ -29,4 +29,4 @@ co(function * () {
   // Get hash all
   let item = yield storage.hgetall('foo')
   console.log(item) // -> {bar: 'baz'}
-})
+}).catch((err) => console.error(err))
