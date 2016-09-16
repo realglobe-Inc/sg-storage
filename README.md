@@ -53,6 +53,7 @@ Simple storage for SUGOS
 <!-- Section from "doc/guides/01.Installation.md.hbs" Start -->
 
 <a name="section-doc-guides-01-installation-md"></a>
+
 Installation
 -----
 
@@ -66,6 +67,7 @@ $ npm install sg-storage --save
 <!-- Section from "doc/guides/02.Usage.md.hbs" Start -->
 
 <a name="section-doc-guides-02-usage-md"></a>
+
 Usage
 ---------
 
@@ -128,6 +130,8 @@ This software is released under the [MIT License](https://github.com/realglobe-I
 Links
 ------
 
-+ [node-redis](https://github.com/NodeRedis/node_redis)
++ [node-redis][node_redis_url]
+
+[node_redis_url]: https://github.com/NodeRedis/node_redis
 
 <!-- Links End -->
