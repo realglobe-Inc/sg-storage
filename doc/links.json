@@ -1,4 +1,5 @@
 {
   "node-redis": "https://github.com/NodeRedis/node_redis",
-  "SUGOS": "https://github.com/realglobe-Inc/sugos"
+  "SUGOS": "https://github.com/realglobe-Inc/sugos",
+  "Realglobe, Inc.": "http://realglobe.jp"
 }
