@@ -131,8 +131,10 @@ Links
 
 + [node-redis][node_redis_url]
 + [SUGOS][sugos_url]
++ [Realglobe, Inc.][realglobe,_inc__url]
 
 [node_redis_url]: https://github.com/NodeRedis/node_redis
 [sugos_url]: https://github.com/realglobe-Inc/sugos
+[realglobe,_inc__url]: http://realglobe.jp
 
 <!-- Links End -->
