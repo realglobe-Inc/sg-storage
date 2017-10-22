@@ -1,6 +1,6 @@
 {
   "name": "sg-storage",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "Simple storage for SUGOS",
   "main": "lib",
   "scripts": {
