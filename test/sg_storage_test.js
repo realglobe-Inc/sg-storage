@@ -6,23 +6,22 @@
 
 const sgStorage = require('../lib/sg_storage.js')
 const assert = require('assert')
-const co = require('co')
 
 describe('sg-storage', () => {
-  before(() => co(function * () {
+  before(async () => {
 
-  }))
+  })
 
-  after(() => co(function * () {
+  after(async () => {
 
-  }))
+  })
 
-  it('Sg storage', () => co(function * () {
+  it('Sg storage', async () => {
     let storage = sgStorage(`${__dirname}/../tmp/testing-storage-01`)
-    yield storage.hset('myValue01', { foo: 'bar' })
-    let data01 = yield storage.hgetall('myValue01')
-    assert.deepEqual(data01, { foo: 'bar' })
-  }))
+    await storage.hset('myValue01', {foo: 'bar'})
+    let data01 = await storage.hgetall('myValue01')
+    assert.deepEqual(data01, {foo: 'bar'})
+  })
 })
 
 /* global describe, before, after, it */

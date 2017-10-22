@@ -6,22 +6,22 @@
 
 const index = require('../lib/index.js')
 const assert = require('assert')
-const co = require('co')
+
 
 describe('index', () => {
-  before(() => co(function * () {
+  before(async () => {
 
-  }))
+  })
 
-  after(() => co(function * () {
+  after(async () => {
 
-  }))
+  })
 
-  it('Create', () => co(function * () {
+  it('Create', async () => {
     for (let name of Object.keys(index)) {
       assert.ok(index[ name ])
     }
-  }))
+  })
 })
 
 /* global describe, before, after, it */

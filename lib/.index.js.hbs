@@ -7,7 +7,7 @@
 
 const sgStorage = require('./sg_storage')
 
-let lib = sgStorage.bind(this)
+const lib = sgStorage.bind(this)
 
 Object.assign(lib, sgStorage, {
 
